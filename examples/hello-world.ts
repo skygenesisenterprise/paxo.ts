@@ -1,7 +1,10 @@
 // Hello World example for Paxo.ts
 
-// App lifecycle functions
-function run() {
+// App lifecycle functions (global in PaxOS)
+declare var run: () => void;
+declare var quit: () => void;
+
+run = function() {
   // Create a window
   const win = gui.window({ title: "Hello Paxo.ts", size: { width: 320, height: 240 } });
 
@@ -26,8 +29,8 @@ function run() {
   win.addChild(button);
 
   win.show();
-}
+};
 
-function quit() {
+quit = function() {
   // Cleanup if needed
 }

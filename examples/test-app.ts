@@ -1,7 +1,10 @@
 // test-app app for Paxo.ts
 
 // App lifecycle functions
-function run() {
+declare var run: () => void;
+declare var quit: () => void;
+
+run = function() {
   // Create main window
   const win = gui.window({
     title: "Test App",
@@ -17,9 +20,8 @@ function run() {
 
   win.addChild(label);
   win.show();
-}
+};
 
-function quit() {
+quit = function() {
   // Cleanup code here
 }
-test

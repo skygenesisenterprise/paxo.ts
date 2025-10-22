@@ -5,9 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tstl",
-    "build-app": "node scripts/build-app.js",
-    "create-app": "node scripts/create-app.js",
-    "dev": "node scripts/dev-server.js",
+    "build-app": "node src/cli/build-app.js",
+    "create-app": "node src/cli/create-app.js",
+    "dev": "node src/cli/dev-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

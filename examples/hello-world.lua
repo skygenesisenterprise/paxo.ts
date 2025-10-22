@@ -1,5 +1,5 @@
 --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
-function run()
+run = function(self)
     local win = gui:window({title = "Hello Paxo.ts", size = {width = 320, height = 240}})
     local label = gui:label({
         text = "Hello, World!",
@@ -17,5 +17,5 @@ function run()
     win:addChild(button)
     win:show()
 end
-function quit()
+quit = function(self)
 end

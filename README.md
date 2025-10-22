@@ -13,10 +13,31 @@ This framework provides a modern, type-safe alternative to Lua for developing ap
 
 ## Features
 
-- Type-safe APIs for PaxOS modules (GUI, Storage, Hardware, etc.)
-- TypeScript to Lua transpilation using TypeScriptToLua
-- Automated app packaging for PaxOS deployment
-- Modern development workflow with npm/pnpm
+- **Type-safe APIs**: Full TypeScript interfaces for all PaxOS modules
+- **Component Library**: Reusable UI components (Button, Label, Input, etc.)
+- **Custom Hooks**: useStorage, useTimer for common patterns
+- **App Framework**: Base App class for structured development
+- **Utilities**: Colors, time formatting, and more
+- **CLI Tools**: create-app, build-app, dev server
+- **Vite-like DX**: Fast builds, file watching, hot reloading
+- **Complete Tree Structure**: Organized like React/Next.js frameworks
+
+## Project Structure
+
+```
+paxo.ts/
+├── src/
+│   ├── core/           # Core PaxOS API types and App base class
+│   ├── components/     # Reusable UI components
+│   ├── hooks/          # Custom hooks (useStorage, useTimer)
+│   ├── utils/          # Utility functions and helpers
+│   └── cli/            # Command-line tools
+├── examples/           # Sample applications
+├── docs/               # Documentation
+├── tests/              # Test files
+├── storage/            # Built apps for PaxOS
+└── package.json        # Project configuration
+```
 
 ## Installation
 
