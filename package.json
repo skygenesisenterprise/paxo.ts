@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tstl",
     "build-app": "node scripts/build-app.js",
+    "create-app": "node scripts/create-app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tstl --watch"
   },
