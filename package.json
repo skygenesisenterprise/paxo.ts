@@ -7,14 +7,20 @@
     "build": "tstl",
     "build-app": "node scripts/build-app.js",
     "create-app": "node scripts/create-app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tstl --watch"
+    "dev": "node scripts/dev-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skygenesisenterprise/paxo.ts.git"
   },
-  "keywords": ["paxo", "paxophone", "typescript", "lua", "framework"],
+  "keywords": [
+    "paxo",
+    "paxophone",
+    "typescript",
+    "lua",
+    "framework"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
@@ -23,6 +29,7 @@
   },
   "homepage": "https://github.com/skygenesisenterprise/paxo.ts#readme",
   "devDependencies": {
+    "chokidar": "^4.0.3",
     "typescript": "^5.0.0",
     "typescript-to-lua": "^1.0.0"
   }

@@ -22,3 +22,4 @@ function run() {
 function quit() {
   // Cleanup code here
 }
+test

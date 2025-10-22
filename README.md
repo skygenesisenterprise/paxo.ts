@@ -27,9 +27,25 @@ pnpm install
 ## Quick Start
 
 1. Create a new app: `npm run create-app my-app`
-2. Edit the generated `examples/my-app.ts` file
-3. Build the app: `npm run build-app my-app`
+2. Start the dev server: `npm run dev`
+3. Edit the generated `examples/my-app.ts` file - changes will be automatically built and the simulation restarted
 4. The app will be packaged in `storage/apps/my-app/` ready for deployment to PaxOS
+
+## Development Workflow
+
+Inspired by Vite.js, the dev server provides fast, iterative development:
+- **File Watching**: Automatically detects changes in TypeScript files
+- **Instant Transpilation**: Converts TS to Lua on-the-fly
+- **App Packaging**: Generates PaxOS-compatible app bundles
+- **Hot Build**: No manual rebuilds needed during development
+
+**Usage**:
+1. Run `npm run dev` in one terminal (starts the watcher)
+2. Run `pio run -e linux` in another terminal (starts PaxOS simulation)
+3. Edit your TS files - they'll be built automatically
+4. Restart the sim manually to see changes (or use PaxOS's app_dev.py for auto-restart)
+
+This workflow eliminates the compile-wait cycle, making development as smooth as modern web frameworks.
 
 ## Manual Usage
 
