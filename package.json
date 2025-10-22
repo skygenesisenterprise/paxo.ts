@@ -2,20 +2,27 @@
   "name": "paxo.ts",
   "version": "1.0.0",
   "description": "A Paxo Phone TypeScript Framework for Application Environment",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tstl",
+    "build-app": "node scripts/build-app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tstl --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skygenesisenterprise/paxo.ts.git"
   },
-  "keywords": [],
+  "keywords": ["paxo", "paxophone", "typescript", "lua", "framework"],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/skygenesisenterprise/paxo.ts/issues"
   },
-  "homepage": "https://github.com/skygenesisenterprise/paxo.ts#readme"
+  "homepage": "https://github.com/skygenesisenterprise/paxo.ts#readme",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "typescript-to-lua": "^1.0.0"
+  }
 }
